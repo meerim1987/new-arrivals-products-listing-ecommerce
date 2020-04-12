@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organix</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+    <div class="body-wrap">
+        <header>
+            <div class="contacts">
+                <span class="schedule">Mon - Fri:9:00am - 19:00pm</span>
+                <span class="divider">|</span>
+                <a class="email" title="Mail to" href="mailto:oboskan.m@gmail.com">oboskan.m@gmail.com</a>
+            </div>
+            <div class="menu">
+                <a class="logo" href="javascript:" title="" aria-label="store logo">
+                    <img src="assets/logo.png" title="" alt="" width="189" height="64">
+                </a>
+                <ul class="top-menu">
+                    <li>Home</li>
+                    <li class="cat-dropdown">Vegetable</li>
+                    <li class="cat-dropdown">Decoration</li>
+                    <li class="cat-dropdown">Pages</li>
+                    <li>Brands</li>
+                </ul> 
+                <div class="actions-header">
+                    <a href="javascript:" class="cart">
+                        <span class="icon-cart"></span>
+                        <span class="cart-qty-wrap">
+                            <span class="cart-qty">0</span>
+                        </span>
+                    </a>
+                    <a href="javascript:" class="wishlist">
+                        <span class="wishlist-icon"></span>
+                        <span class="wishlist-qty-wrap">
+                            <span class="cart-qty">0</span>
+                        </span>
+                    </a>
+                </div>  
+                <section class="cart-cont">
+                    <div class="cart-qty">
+                        <span class="total">0</span>
+                        <span>items in Cart</span>
+                        <a href="javascript:" class="close-icon-wrap">
+                            <span class="close-icon"></span>
+                        </a>
+                    </div>
+                    <div class="total">
+                        <span>Cart Subtotal:</span>
+                        $<span class="amount">0</span>
+                    </div>
+                    <ul class="products">
+                    </ul>
+                </section>  
+                <section class="wishlist-cont">
+                    <div class="wshl-qty">
+                        <span class="total">0</span>
+                        <span>items in Wish list</span>
+                        <a href="javascript:" class="close-icon-wrap">
+                            <span class="close-icon"></span>
+                        </a>
+                    </div>
+                    <ul class="products">
+                    </ul>
+                </section>  
+            </div>
+        </header>
+        <div class="organic-slideshow">
+            <div>
+                <img src="assets/slider-home2-1.jpg" alt="">
+                <img src="assets/slider-home2-2.jpg" alt="">
+                <img src="assets/slider-home2-3.jpg" alt="">   
+            </div>
+        </div>
+        <section class="categories">
+            <h2>Shop By Categories</h2>
+            <div class="categories-cont">
+            </div>
+        </section>
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <div class="arrivals-cont">
+                <ul class="arrivals-tabs"></ul>
+                <div class="arrivals-content"></div>
+            </div>
+        </section>
+        <section>
+            <h2>Deal of the Week</h2>
+            <div class="deals-cont"></div>
+        </section>
+        <footer>
+            <div>
+                <a class="logo" href="javascript:" title="" aria-label="store logo">
+                    <img src="assets/logo.png" title="" alt="" width="189" height="64">
+                </a>
+            </div>
+            <div class="contacts">
+                <a class="phone" href="tel:+17789178588">Tel: 778.917.8588</a>
+                <span class="schedule">Mon - Fri:9:00am - 6:00pm</span>
+                <a class="email" title="Mail to" href="mailto:oboskan.m@gmail.com">oboskan.m@gmail.com</a>
+            </div>
+            <div class="address">Coquitlam, 508-530 Whiting Way, V3J0J4, BC, Canada</div>
+        </footer>
+    </div>
+    <div class="msg-container"></div>
+    <!-- templates -->
+    <div class="templates">
+        <div id="product-template">
+            <div id="__id__" class="product-item__wlClass__">
+                <a class="product-photo" href="javascript:">
+                    __img__
+                </a>
+                <div class="product-info">
+                    <span class="product-name">__productName__</span>
+                    <div class="price-wrap">
+                        <span class="product-price">__productPrice__</span>
+                        <span class="price-before-disc">__oldPrice__</span>
+                    </div>
+                </div>
+                <div class="actions-primary">
+                    <button type="submit" title="Add to Cart" class="action tocart">Add to Cart</button>
+                    <div class="action-add-wishlist visible-on-hover">
+                        <a href="javascript://">
+                            <i class="lnr lnr-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cart-product-template">
+            <li data-id="__dataId__">
+                <div class="product-image">
+                    <a href="javascript">
+                        __img__
+                    </a>
+                </div>
+                <div class="right-col">
+                    <span class="product-name">__productName__</span>
+                    <div class="product-cart-info">
+                        <span class="price">$
+                            <span>__productPrice__</span>
+                        </span>
+                        <span class="qty-label">Qty:</span>
+                        <input type="number" id="cart-qty" name="quantity" value="__productQty__"
+                            min="1" max="10">
+                        <span class="remove-product"><a class="del" href="javascript:"></a></span>
+                    </div>
+                </div> 
+            </li>
+        </div>
+        <div id="wish-list-template">
+            <li data-id="__dataId__">
+                <div class="product-image">
+                    <a href="javascript">
+                        __img__
+                    </a>
+                </div>
+                <div class="right-col">
+                    <span class="product-name">__productName__</span>
+                    <span class="remove-product"><a class="del" href="javascript:"></a></span>
+                </div> 
+            </li>
+        </div>
+        <div id="deals-template">
+            <div data-id="__dataId__" class="product-deal">
+                <div class="product-img-wrap">
+                    <a href="javascript:">
+                        __img__
+                        <div class="badge">
+                            <div class="sale">Sale</div>
+                            <div class="text">New</div>
+                        </div>
+                        <div class="count-down">
+                            <div class="timer-list">
+                                <span class="countdown-section">
+                                    <span class="countdown-amount-days">
+                                        <b>__days__</b>
+                                    </span>
+                                    <span class="countdown-label">Days</span>
+                                </span>
+                                <span class="countdown-section">
+                                    <span class="countdown-amount-hours">
+                                        <b>__hours__</b>
+                                    </span>
+                                    <span class="countdown-label">Hours</span>
+                                </span>
+                                <span class="countdown-section">
+                                    <span class="countdown-amount-mins">
+                                        <b>__mins__</b>
+                                    </span>
+                                    <span class="countdown-label">Mins</span>
+                                </span>
+                                <span class="countdown-section">
+                                    <span class="countdown-amount-secs">
+                                        <b>__secs__</b>
+                                    </span>
+                                    <span class="countdown-label">Secs</span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <h3><a href="javascript:">__productName__</a></h3>
+                    <div>
+                        <span class="price-after-disc">$__productPriceNow__</span>
+                        <span class="price-before-disc">$__productPriceBef__</span>
+                    </div>
+                    <div class="product-description">__productDesc__</div>
+                    <button type="submit" title="Add to Cart" class="action tocart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
