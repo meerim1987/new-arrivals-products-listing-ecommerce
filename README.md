@@ -11,5 +11,5 @@ The project’s main functionality is the e-commerce New arrivals product listin
 
 Note that this is one-page application, so the button ‘Proceed to Checkout’ is not redirecting to respective page, as well as categories listing links in Shop by Categories.
 
-Click demo to see the project in live. 
+Click [Demo](https://meerim1987.github.io/new-arrivals-products-listing-ecommerce/) to see the project in live. 
 
