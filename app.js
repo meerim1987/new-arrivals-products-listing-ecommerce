@@ -363,6 +363,7 @@ const initPage = data => {
         if (node.classList.contains('tocart')) {
             // Make sure that Wish list cart is closed before the shopping cart appears
             addFadeOutEffect(wishListCont);
+            wshLHeader.classList.remove('active-wsl');
 
             productId = node.closest('.product-item').getAttribute('id');
             materializeEffect.call(node, e);
@@ -412,6 +413,7 @@ const initPage = data => {
         if (node.classList.contains('tocart')) {
              // Make sure that Wish list cart is closed before the shopping cart appears
              addFadeOutEffect(wishListCont);
+             wshLHeader.classList.remove('active-wsl');
              
             const productId = node.closest('.product-deal').getAttribute('data-id');
             materializeEffect.call(node, e);
