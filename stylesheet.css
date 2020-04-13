@@ -852,9 +852,6 @@ img {
     margin-right: 10px;
 }
 
-.actions-header > a {
-    padding: 0 5px;
-}
 
 
 /* Wish list styles */
@@ -1216,10 +1213,6 @@ footer .address {
 
     .actions-header {
         display: flex;
-    }
-
-    .actions-header > a {
-        padding: 0;
     }
 
     .actions-header span:not(.cart-qty):not(.cart-qty-wrap):not(.wishlist-qty-wrap) {
